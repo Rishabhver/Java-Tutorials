@@ -1,0 +1,4 @@
+String vs StringBuffer Vs  StringBuilder
+
+String - is immutable -> which means if we create the object then we cannot make any changes to the object
+StringBuffer -> is mutable -> which means if we create object then can makes changes to the object

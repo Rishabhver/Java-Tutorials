@@ -1,0 +1,95 @@
+GIT :    Contains 2 location :   Local repo (IDE , Computer storage) & Remote repository (on git repositiory)
+
+
+Local Repo: 
+1. All the coding is done on eclipse IDE
+2. Then code is transfered to stage folder using -> ("git add.")
+3. Then code is transfered to local Repo using ->    (git commit -m "reason")
+
+Remote Location :
+1. Then we need to push code from local repo to Remote Repo using -> ()
+
+
+difference between fetch and push
+1. pull: Transfer of code from eclipse[Working directory] to remote repository directly. -------------------1
+2. fetch: Transfer of code from local repo to remote repo   -------------2
+
+
+// to 	move code from local repo to working directory[Eclipse] -> merge operation will be formed  ----------------  2
+
+Formula :  [git pull = fetch + merge]
+
+// Checkin = Push;
+// CheckOut = Pull;
+
+
+//  Difference between Git and Git hub
+// Git is a command line tool used for tracking code changes, code flow and code sharing.  SCM - source control management
+// GitHub is a web-Based git repository hostiung service
+
+*******************************************************************************************************************
+Commands: 
+
+1. First install git
+2. on Git hub create project
+3. Open command prompt
+4. change directory to eclipse project [ cd C:\Users\lenovo\eclipse-workspace\practiceGit]
+5. "git init"   :   to Initialize git
+6. "git remote add origin "URL"   
+7. "git add ."   :  add file to git stage
+8. "git status"  :  to see the status 
+9.  "git config --global user.name "Rishabh"   -> to configure username
+10. "git congig --global user.email "rishab4verma@gmail.com"   --> to configure email
+11. "git config --list"  : to see configuration list
+12. "git commit -m "this is my code"    : to commit code to local repo
+13. "git push -u origin master"  -> to push code to master branch og git hub
+
+// Cooncept of SSH key
+1. Anyone can pull the code from our repository but no one can push the code into our repository
+2. If we want to authorize someone to push code into our git repository then we need to add SSH key into our github
+
+// How to add SSH
+1. go -> setting -> SSh and GPS key -> entre user's ssh key
+
+// how to generate SSH key 
+1. We can generate SSH key using putty and puttygen
+2. Download putty and puttygen from "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"
+3. from windows open puttygen
+4. Select Key SSH-2 RSA and click on generate
+5. While key is generating move the cursor randomly beneth the processing bar
+6. The key generated is the SSH key. Copy and paste in the github and save.
+7. Docs to generate SSH key can be viewed on "https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-windows "
+
+
+// clone and pulling
+
+ clone: to get the whole project into our local repository for the first  time . We cannot pull the code for the first time
+ 1. First create a folder 
+ 2. then copy the location of folder
+ 3 move to folder location in cmd
+ 4. Copy the url of project from git hub
+ 5 in cmd  " git clone Project URL
+ 
+ pull : to take updated code from github to local repository [first time only clone then afterword we can pull]
+ 
+1. git pull origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

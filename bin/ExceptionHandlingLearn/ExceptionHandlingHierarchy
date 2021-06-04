@@ -1,0 +1,12 @@
+
+
+
+
+                     Object  [ super class ]
+                     !
+                     Throwable [ child of object and parent of error class and exception class]
+                      !      !
+[child of throwable] Error  Exception [ Child of Throwable Class]
+                     class  Class
+                               ! 
+                               ErroroutOfIndex class , ArthematicException class [ Child of Exception class]
